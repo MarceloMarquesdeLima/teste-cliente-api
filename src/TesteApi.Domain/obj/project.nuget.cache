@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mS15WqKqiG/F686ppQ2jG/9utW+ximmnzvE5ThnmiWy66V8tMp4H5scTtREZ5yGRxD3oIdOr92UYlsEohR+ScQ==",
+  "success": true,
+  "projectFilePath": "C:\\dev\\teste-cliente-api\\src\\TesteApi.Domain\\TesteApi.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marce\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
