@@ -5,7 +5,7 @@ namespace Opea.Domain.Interfaces.Repositorio
 {
 	public interface IClienteRepositorio : IRepositorio<Cliente>
     {
-        Task<IEnumerable<Cliente>> ObterCLIENTE();
+        Task<IEnumerable<Cliente>> ObterCliente();
         Task<Cliente> ObterClientePorId(Guid id);
     }
 }

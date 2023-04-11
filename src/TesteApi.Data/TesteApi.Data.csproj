@@ -17,9 +17,7 @@
     <None Remove="Repositorio\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Context\" />
     <Folder Include="Mapa\" />
-    <Folder Include="Repositorio\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TesteApi.Domain\TesteApi.Domain.csproj" />

@@ -8,10 +8,10 @@ namespace Opea.Data.Repositorio
 {
 	public abstract class Repositorio<TEntidade> : IRepositorio<TEntidade> where TEntidade : EntidadeBase
 	{
-        protected readonly OpeaDbContext Db;
+        protected readonly ApplicationDbContext Db;
         protected readonly DbSet<TEntidade> DbSet;
 
-		public Repositorio(OpeaDbContext db)
+		public Repositorio(ApplicationDbContext db)
 		{
             Db = db;
             DbSet = db.Set<TEntidade>();

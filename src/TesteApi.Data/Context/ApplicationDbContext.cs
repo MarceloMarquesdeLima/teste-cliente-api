@@ -4,9 +4,9 @@ using Opea.Domain.Models;
 
 namespace Opea.Data.Context
 {
-	public class OpeaDbContext : DbContext
+	public class ApplicationDbContext : DbContext
 	{
-		public OpeaDbContext(DbContextOptions options) :base(options) { }
+		public ApplicationDbContext(DbContextOptions options) :base(options) { }
 
 		public DbSet<Cliente> Clientes { get; set; }
 
@@ -17,7 +17,7 @@ namespace Opea.Data.Context
                     .Where(p => p.ClrType == typeof(string))))
                 property.SetColumnType("varchar(100)");
 
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(OpeaDbContext).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
 
             foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys())) relationship.DeleteBehavior = DeleteBehavior.ClientSetNull;
 
