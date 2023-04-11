@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Models\Enum\" />
+    <None Remove="Models\Validacao\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Notificacoes\" />
+    <None Remove="Interfaces\Servico\" />
+    <None Remove="Interfaces\Repositorio\" />
+    <None Remove="Servico\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Models\Enum\" />
+    <Folder Include="Models\Validacao\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Notificacoes\" />
+    <Folder Include="Interfaces\Servico\" />
+    <Folder Include="Interfaces\Repositorio\" />
+    <Folder Include="Servico\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.4.0" />
+  </ItemGroup>
+</Project>
